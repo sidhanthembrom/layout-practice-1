@@ -1,7 +1,9 @@
 .height-sm{
   height: 100px;
+  border-radius: 30px;
 }
 
 .height-big{
   height: 225px;
+  border-radius: 10px;
 }

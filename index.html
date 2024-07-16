@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout practice 1</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -28,22 +31,37 @@
   <body>
     <div class="container text-light my-5">
       <div class="row">
-        <div class="col-6 bg-secondary rounded-sm height-sm">A</div>
-        <div class="col-2 bg-secondary ml-auto rounded-sm height-sm">B</div>
+        <div class="col-lg-6 col-md-4 px-0">
+          <div class="bg-secondary pl-3 mr-2 rounded-sm height-sm">A</div>
+        </div>
+        <div class="col-2 bg-secondary ml-lg-auto rounded-sm height-sm">B</div>
+        <div
+          class="col-2 bg-secondary ml-md-auto d-lg-none d-md-block rounded-sm height-sm pl-3"
+        >
+          C
+        </div>
       </div>
       <div class="row mt-2">
-        <div class="col-4 px-0">
-          <div class="bg-secondary mr-2 height-big pl-2 rounded-sm">C</div>
+        <div class="col-lg-4 px-0 d-md-none d-lg-block">
+          <div class="bg-secondary mr-2 height-big pl-3 rounded-sm">C</div>
         </div>
-        <div class="col-8 bg-secondary rounded-sm py-2">
+        <div class="col-8 bg-secondary rounded-sm py-2 ml-md-auto">
           <div class="row px-2">
             <div class="col-2 bg-info rounded-sm">E</div>
             <div class="col-10">
               <div class="row">
                 <div class="col-12 px-0">
-                  <div class="bg-info height-sm ml-2 pl-3 rounded-sm">F</div>
+                  <div class="bg-info height-sm ml-2 pl-3 rounded-sm">
+                    <span class="d-md-none d-lg-block">F</span>
+                    <span class="d-md-block d-lg-none">G</span>
+                  </div>
                 </div>
-                <div class="col-2 ml-auto bg-info height-sm mt-2 rounded-sm">G</div>
+                <div
+                  class="col-2 ml-auto bg-info height-sm mt-2 rounded-sm d-md-flex"
+                >
+                  <span class="d-md-block d-lg-none">F</span>
+                  <span class="d-md-none d-lg-block">G</span>
+                </div>
               </div>
             </div>
           </div>
